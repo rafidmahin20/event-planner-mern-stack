@@ -12,6 +12,6 @@ app.use(express.urlencoded({extended: true}));
 
 app.use("/api/v1/message", messageRouter);
 
-dbConnection()
+dbConnection();
 
 export default app;
