@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {Link} from "react-scroll";
+import {GiHamburgerMenu} from "react-icons/gi";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -8,11 +9,14 @@ const Navbar = () => {
       <div className='logo'>EVENT PLANNER</div>
       <div className={show ? "navLinks showmenu" : "navLinks"}>
         <div className='links'>
-          <Link to="landing" spy={true} duration={500}>HOME</Link>
+          <Link to="hero" spy={true} duration={500}>HOME</Link>
           <Link to="serviecs" spy={true} duration={500}>SERVICES</Link>
           <Link to="about" spy={true} duration={500}>ABOUT</Link>
           <Link to="contact" spy={true} duration={500}>CONTACT</Link>
         </div>
+      </div>
+      <div className="hamburger" onClick={() => setShow(!show)}>
+        <GiHamburgerMenu/>
       </div>
     </nav>
   )
