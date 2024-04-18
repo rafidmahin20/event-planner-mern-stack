@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className={show ? "navLinks showmenu" : "navLinks"}>
         <div className='links'>
           <Link to="hero" spy={true} duration={500}>HOME</Link>
-          <Link to="serviecs" spy={true} duration={500}>SERVICES</Link>
+          <Link to="services" spy={true} duration={500}>SERVICES</Link>
           <Link to="about" spy={true} duration={500}>ABOUT</Link>
           <Link to="contact" spy={true} duration={500}>CONTACT</Link>
         </div>
