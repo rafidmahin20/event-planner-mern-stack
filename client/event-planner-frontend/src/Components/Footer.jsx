@@ -2,7 +2,22 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <div className='banner'>
+        <div className='title'>
+          <h2>Event planner</h2>
+          <p>Events and Weddings</p>
+        </div>
+        <div className='tag'>
+          <label>News Letter</label>
+          <div>
+            <input type='text' placeholder='E-mail'/>
+            <button>Subscribe</button>
+          </div>
+          <p>Sign up with your email to receive news</p>
+        </div>
+      </div>
+    </footer>
   )
 }
 
